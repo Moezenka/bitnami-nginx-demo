@@ -166,11 +166,3 @@ spec:
       volumes:
         - name: empty-dir
           emptyDir: {}
-        - name: certificate
-          secret:
-            secretName: nginx-tls
-            items:
-              - key: tls.crt
-                path: server.crt
-              - key: tls.key
-                path: server.key
